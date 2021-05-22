@@ -1,5 +1,4 @@
 #content {
-    font-family: 'Lato', sans-serif;
     font-size: large;
     padding: 15px;
 
@@ -34,7 +33,6 @@ button, input {
     margin-right: 20px;
     border-radius: 10px;
     outline: none;
-    font-family: 'Lato', sans-serif;
 
     padding-left: 20px;
     padding-right: 20px;
@@ -45,8 +43,17 @@ button, input {
     margin-bottom: 20px;
 }
 
+input {
+    text-align: center;
+}
+
 label {
+    font-size: x-large;
     margin-right: 10px;
+}
+
+p {
+    font-size: x-large;
 }
 
 div#samples_div input[type="text"] {
@@ -65,15 +72,30 @@ th, td, tr {
     padding-bottom: 5px;
     text-align: center;
 }
-/* 
-.barchart, .polygonchart {
-    margin-bottom: 50px;
+
+body {
+    font-size: x-large;
 }
 
 canvas {
-    max-width: 800px;
-    max-height: 400px;
+    max-width: 950px;
+    max-height: 600px;
 }
+
+.barchart {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div#task1_solution p {
+    font-size: x-large;
+}
+
+
+/* 
+
+
+
 
 div#task1_solution p {
     font-size: xx-large;
@@ -151,7 +173,3 @@ div#task5_solution span {
     margin-bottom: 5px;
     font-weight: bold;
 } */
-
-body {
-    font-size: x-large;
-}
