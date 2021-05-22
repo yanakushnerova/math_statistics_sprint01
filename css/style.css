@@ -1,0 +1,139 @@
+#content {
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    padding: 15px;
+
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button, input {
+    font-size: large;
+    margin-right: 20px;
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+}
+
+label {
+    margin-right: 10px;
+}
+
+div#samples_div input[type="text"] {
+    width: 90%;
+}
+
+table {
+    margin-top: 20px;
+}
+
+th, td, tr {
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+/* 
+.barchart, .polygonchart {
+    margin-bottom: 50px;
+}
+
+canvas {
+    max-width: 800px;
+    max-height: 400px;
+}
+
+div#task1_solution p {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+div#task2_solution p {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+div#task3_solution p {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+div#task4_solution p {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+div#task5_solution p {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+div#task1_solution div {
+    font-size: x-large;
+}
+
+div#task2_solution div {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+div#task2_solution table {
+    font-size: x-large;
+}
+
+div#task2_solution td {
+    padding: 15px;
+    border: none;
+}
+
+div#task3_solution div {
+    font-size: x-large;
+    margin-bottom: 40px;
+}
+
+div#task4_solution div {
+    font-size: x-large;
+    margin-bottom: 40px;
+}
+
+div#task5_solution div {
+    font-size: x-large;
+    margin-bottom: 40px;
+}
+
+div#task3_solution span {
+    font-size: x-large;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+div#task4_solution span {
+    font-size: x-large;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+div#task5_solution span {
+    font-size: x-large;
+    margin-bottom: 5px;
+    font-weight: bold;
+} */
+
+body {
+    font-size: x-large;
+}

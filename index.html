@@ -23,16 +23,41 @@
 <body>
     <div id="content">
         <div id="content_page">
-            <h1>Sprint 01</h1>
+            <h1>Sprint 2</h1>
 
             <!-- <div id="samples_div">
                 <label for="sample_n">Enter number of samples:   </label>
                 <input id="sample_n" type="number" value="2" min="2" max="26">
                 <button id="generate_sample">Generate</button>
                 <button id="set_default">Set default</button>
+            </div> -->
+
+            <div id="input_page">
+                <label for="intervals_n">Кількість інтервалів:   </label>
+                <input id="intervals_n" type="number" value="9" min="1" max="25">
+                <br>
+                <label for="intervals_n">Рівень значущості:   </label>
+                <input id="intervals_n" type="number" value="0.05" min="0.01" max="0.1">
+                <br>
+
+                <button id="enter_data">Ввести дані</button>
+                <button id="default_data">Встановити за змовчуванням</button>
+                
+                <div id="input_intervals">
+                    <!-- <table>
+                        <thead>
+                            <th>Початок інтервалу</th>
+                            <th>Кінець інтервалу</th>
+                            <th>Число спостережень</th>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table> -->
+                </div>
             </div>
 
-            <p>Choose a number of task:</p>
+            <p>Виберіть номер завдання:</p>
 
             <div id="first_page">
                 <h1>Task 1</h1>
@@ -64,7 +89,7 @@
                 </div>
             </div>
 
-            <div id="fourth_page">
+            <!-- <div id="fourth_page">
                 <h1>Task 4</h1>
     
                 <button id="task4_calculate">Calculate</button>
