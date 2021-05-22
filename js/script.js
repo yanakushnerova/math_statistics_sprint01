@@ -52,8 +52,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     task1_calculate.onclick = function() {
         solution1.innerHTML = ""
-        let n = document.querySelectorAll("#input_intervals > table > tr").length
-        console.log(n)
+        // let n = document.querySelectorAll("#input_intervals > table > tr").length
+        parseTable()
+        console.log(parseTable())
     }
 
     task2_calculate.onclick = function() {

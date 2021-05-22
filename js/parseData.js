@@ -57,6 +57,16 @@ function createInputTable(flag, amountOfIntervals, arr) {
     input_intervals.appendChild(table)
 }
 
-function parseTable (arr) {
-    
+function parseTable() {
+    let tr = document.querySelectorAll("#input_intervals > table > tr")
+    let arr = Array.from(Array(tr.length), () => new Array(3))
+
+    for (let i = 0; i < tr.length; i++) {
+        let td = tr[i].querySelectorAll("td input")
+        for (let j = 0; j < td.length; j++) {
+            arr[i][j] = parseFloat(td[j].value) 
+        }
+    }
+
+    return arr
 }
