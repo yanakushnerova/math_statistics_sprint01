@@ -1,61 +1,59 @@
-let content_page = document.getElementById("content_page")
-let first_page = document.getElementById("first_page")
-let second_page = document.getElementById("second_page")
-let third_page = document.getElementById("third_page")
+const content_page = document.getElementById("content_page")
+const first_page = document.getElementById("first_page")
+const second_page = document.getElementById("second_page")
+const third_page = document.getElementById("third_page")
 
-let calculate1 = document.getElementById("task1_calculate")
-let calculate2 = document.getElementById("task2_calculate")
-let calculate3 = document.getElementById("task3_calculate")
+const calculate1 = document.getElementById("task1_calculate")
+const calculate2 = document.getElementById("task2_calculate")
+const calculate3 = document.getElementById("task3_calculate")
 
-let solution1 = document.getElementById("task1_solution")
-let solution2 = document.getElementById("task2_solution")
-let solution3 = document.getElementById("task3_solution")
+const solution1 = document.getElementById("task1_solution")
+const solution2 = document.getElementById("task2_solution")
+const solution3 = document.getElementById("task3_solution")
 
-const sample_names = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", 
-    "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+const input_page = document.getElementById("input_page")
+const enter_data = document.getElementById("enter_data")
+const default_data = document.getElementById("default_data")
+const input_intervals = document.getElementById("input_intervals")
 
-let sample_info = document.createElement("p")
-sample_info.setAttribute("id", "sample_info")
+const default_sample = [
+    [0.228, 0.248, 6],
+    [0.248, 0.268, 16],
+    [0.268, 0.288, 21],
+    [0.288, 0.308, 36],
+    [0.308, 0.328, 42],
+    [0.328, 0.348, 32],
+    [0.348, 0.368, 22],
+    [0.368, 0.38, 12],
+    [0.388, 0.408, 8]
+]
 
-let input_page = document.getElementById("input_page")
-let enter_data = document.getElementById("enter_data")
-let default_data = document.getElementById("default_data")
-let input_intervals = document.getElementById("input_intervals")
+let input_sample = []
+
+const intervals_n = document.getElementById("intervals_n")
+const level_n = document.getElementById("level_n")
 
 document.addEventListener('DOMContentLoaded', function() {
-    // generate_sample.onclick = function() {
-    //     sample_info.innerText = ""
+    enter_data.onclick = function() {
+        if (document.getElementById("input_table")) {
+            document.getElementById("input_table").remove()
+        }
 
-    //     if (document.getElementById("sample_inputs")) {
-    //         document.getElementById("sample_inputs").remove()
-    //     }
+        createInputTable(1, intervals_n.value, default_sample)
+    }
 
-    //     let samples = document.getElementById("sample_n").value
+    default_data.onclick = function() {
+        if (document.getElementById("input_table")) {
+            document.getElementById("input_table").remove()
+        }
 
-    //     if (samples > 26 || samples < 2) {
-    //         sample_info.innerText = "Невірна кількість вибірок"
-    //     } else {
-    //         generateInputs(samples)
-    //     }
-
-    //     samples_div.appendChild(sample_info)
-    // }
-
-    // set_default.onclick = function() {
-    //     sample_info.innerText = ""
-
-    //     if (document.getElementById("sample_inputs")) {
-    //         document.getElementById("sample_inputs").remove()
-    //     }
-
-    //     generateInputs(2)
-
-    //     document.getElementById("sample-1").value = default_sample_A
-    //     document.getElementById("sample-2").value = default_sample_B
-    // }
+        createInputTable(2, 9, default_sample)
+    }
 
     task1_calculate.onclick = function() {
         solution1.innerHTML = ""
+        let n = document.querySelectorAll("#input_intervals > table > tr").length
+        console.log(n)
     }
 
     task2_calculate.onclick = function() {

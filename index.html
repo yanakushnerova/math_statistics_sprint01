@@ -12,12 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="js/samples.js" defer></script>
-    <script src="js/first.js" defer></script>
-    <script src="js/second.js" defer></script>
-    <script src="js/third.js" defer></script>
-    <script src="js/fourth.js" defer></script>
-    <script src="js/fifth.js" defer></script>
+    <script src="js/parseData.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -25,35 +20,19 @@
         <div id="content_page">
             <h1>Sprint 2</h1>
 
-            <!-- <div id="samples_div">
-                <label for="sample_n">Enter number of samples:   </label>
-                <input id="sample_n" type="number" value="2" min="2" max="26">
-                <button id="generate_sample">Generate</button>
-                <button id="set_default">Set default</button>
-            </div> -->
-
             <div id="input_page">
                 <label for="intervals_n">Кількість інтервалів:   </label>
                 <input id="intervals_n" type="number" value="9" min="1" max="25">
                 <br>
-                <label for="intervals_n">Рівень значущості:   </label>
-                <input id="intervals_n" type="number" value="0.05" min="0.01" max="0.1">
+                <label for="level_n">Рівень значущості:   </label>
+                <input id="level_n" type="number" value="0.05" min="0.01" max="0.1">
                 <br>
 
                 <button id="enter_data">Ввести дані</button>
                 <button id="default_data">Встановити за змовчуванням</button>
                 
                 <div id="input_intervals">
-                    <!-- <table>
-                        <thead>
-                            <th>Початок інтервалу</th>
-                            <th>Кінець інтервалу</th>
-                            <th>Число спостережень</th>
-                        </thead>
-                        <tbody>
 
-                        </tbody>
-                    </table> -->
                 </div>
             </div>
 
@@ -88,26 +67,6 @@
     
                 </div>
             </div>
-
-            <!-- <div id="fourth_page">
-                <h1>Task 4</h1>
-    
-                <button id="task4_calculate">Calculate</button>
-
-                <div id="task4_solution">
-    
-                </div>
-            </div>
-
-            <div id="fifth_page">
-                <h1>Task 5</h1>
-    
-                <button id="task5_calculate">Calculate</button>
-
-                <div id="task5_solution">
-    
-                </div>
-            </div> -->
         </div>
     </div>
 </body>
