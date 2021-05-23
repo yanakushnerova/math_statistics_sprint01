@@ -13,15 +13,31 @@ const solution3 = document.getElementById("task3_solution")
 
 const input_page = document.getElementById("input_page")
 const input_page_task2 = document.getElementById("input_page_task2")
+const input_page_task3 = document.getElementById("input_page_task3")
 
 const enter_data = document.getElementById("enter_data")
 const enter_data_task2 = document.getElementById("enter_data_task2")
+const enter_data_task3 = document.getElementById("enter_data_task3")
 
 const default_data = document.getElementById("default_data")
 const default_data_task2 = document.getElementById("default_data_task2")
+const default_data_task3 = document.getElementById("default_data_task3")
 
 const input_intervals = document.getElementById("input_intervals")
 const input_intervals_task2 = document.getElementById("input_intervals_task2")
+const input_intervals_task3 = document.getElementById("input_intervals_task3")
+
+let input_sample_1 = []
+let input_sample_2 = []
+let input_sample_3 = []
+
+const intervals_n = document.getElementById("intervals_n")
+const intervals_n_task2 = document.getElementById("intervals_n_task2")
+const intervals_n_task3 = document.getElementById("intervals_n_task3")
+
+const level_n = document.getElementById("level_n")
+const level_n_task2 = document.getElementById("level_n_task2")
+const level_n_task3 = document.getElementById("level_n_task3")
 
 const default_sample = [
     [0.228, 0.248, 6],
@@ -46,14 +62,6 @@ const default_sample_2 = [
     [0.368, 0.38, 16],
     [0.388, 0.408, 6]
 ]
-
-let input_sample = []
-
-const intervals_n = document.getElementById("intervals_n")
-const intervals_n_task2 = document.getElementById("intervals_n_task2")
-
-const level_n = document.getElementById("level_n")
-const level_n_task2 = document.getElementById("level_n_task2")
 
 document.addEventListener('DOMContentLoaded', function() {
     enter_data.onclick = function() {
@@ -88,19 +96,38 @@ document.addEventListener('DOMContentLoaded', function() {
         createInputTable(2, 9, default_sample_2, 2)
     }
 
+    enter_data_task3.onclick = function() {
+        if (document.getElementById("input_table_3")) {
+            document.getElementById("input_table_3").remove()
+        }
+
+        createInputTable(1, intervals_n_task3.value, default_sample_2, 3)
+    }
+
+    default_data_task3.onclick = function() {
+        if (document.getElementById("input_table_3")) {
+            document.getElementById("input_table_3").remove()
+        }
+
+        createInputTable(2, 9, default_sample_2, 3)
+    }
+
     task1_calculate.onclick = function() {
         solution1.innerHTML = ""
-        input_sample = parseTable()
-        intervalSeries(input_sample)
-        checkHypotesis(input_sample)
+        input_sample_1 = parseTable(1)
+        intervalSeries(input_sample_1)
+        checkHypotesis(input_sample_1)
     }
 
     task2_calculate.onclick = function() {
         solution2.innerHTML = ""
-
+        input_sample_1 = parseTable(1)
+        input_sample_2 = parseTable(2)
+        checkHypotesis2(input_sample_1, input_sample_2)
     }
 
     task3_calculate.onclick = function() {
         solution3.innerHTML = ""
+        input_sample_3 = parseTable(3)
     }
 });

@@ -211,10 +211,12 @@ function checkHypotesis(arr) {
     document.getElementById("task1_solution").appendChild(critical)
 
     let conclusion = document.createElement("p")
+    
     if (observed_value < critical_value) {
         conclusion.innerHTML = "Висновок: висунута гіпотеза доведена"
     } else {
         conclusion.innerHTML = "Висновок: висунута гіпотеза не доведена"
     }
+
     document.getElementById("task1_solution").appendChild(conclusion)
 }

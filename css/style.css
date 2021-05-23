@@ -18,11 +18,19 @@ div#input_page_task2 button{
     margin-top: 15px;
 }
 
+div#input_page_task3 button{
+    margin-top: 15px;
+}
+
 #input_intervals td {
     padding: 0;
 }
 
 #input_intervals_task2 td {
+    padding: 0;
+}
+
+#input_intervals_task3 td {
     padding: 0;
 }
 
@@ -37,6 +45,16 @@ div#input_page_task2 button{
 }
 
 #input_intervals_task2 table input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    box-shadow: none;
+    border: none;
+    padding: 8px;
+}
+
+#input_intervals_task3 table input {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -92,6 +110,10 @@ th, td, tr {
     border-radius: 2px;
 }
 
+th {
+    font-size: 21px;
+}
+
 body {
     font-size: x-large;
 }
@@ -111,12 +133,21 @@ div#task1_solution p {
     font-size: x-large;
 }
 
+div#task2_solution p {
+    font-size: x-large;
+}
+
 div#task1_solution div {
     font-size: x-large;
     margin-top: -10px;
 }
 
-#level_n, #level_n_task2 {
+div#task2_solution div {
+    font-size: x-large;
+    margin-top: -10px;
+}
+
+#level_n, #level_n_task2, #level_n_task3 {
     width: 65px;
 }
 

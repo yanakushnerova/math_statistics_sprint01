@@ -11,8 +11,10 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/parseData.js" defer></script>
     <script src="js/firstTask.js" defer></script>
+    <script src="js/secondTask.js" defer></script>
     <script src="js/laplaceIntegration.js" defer></script>
     <script src="js/criticalPearson.js" defer></script>
+    <script src="js/criticalFisher.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -20,26 +22,26 @@
         <div id="content_page">
             <h1>Sprint 2</h1>
 
+            <div id="input_page">
+                <label for="intervals_n">Кількість інтервалів:   </label>
+                <input id="intervals_n" type="number" value="9" min="1" max="25">
+                <br>
+                <label for="level_n">Рівень значущості:   </label>
+                <input id="level_n" value="0.05">
+                <br>
+
+                <button id="enter_data">Ввести дані</button>
+                <button id="default_data">Встановити за змовчуванням</button>
+                
+                <div id="input_intervals">
+
+                </div>
+            </div>
+
             <p>Виберіть номер завдання:</p>
 
             <div id="first_page">
                 <h1>Task 1</h1>
-
-                <div id="input_page">
-                    <label for="intervals_n">Кількість інтервалів:   </label>
-                    <input id="intervals_n" type="number" value="9" min="1" max="25">
-                    <br>
-                    <label for="level_n">Рівень значущості:   </label>
-                    <input id="level_n" value="0.05">
-                    <br>
-
-                    <button id="enter_data">Ввести дані</button>
-                    <button id="default_data">Встановити за змовчуванням</button>
-                    
-                    <div id="input_intervals">
-
-                    </div>
-                </div>
     
                 <button id="task1_calculate">Calculate</button>
     
@@ -76,6 +78,22 @@
 
             <div id="third_page">
                 <h1>Task 3</h1>
+
+                <div id="input_page_task3">
+                    <label for="intervals_n_task3">Кількість інтервалів:   </label>
+                    <input id="intervals_n_task3" type="number" value="9" min="1" max="25">
+                    <br>
+                    <label for="level_n_task3">Рівень значущості:   </label>
+                    <input id="level_n_task3" value="0.05">
+                    <br>
+    
+                    <button id="enter_data_task3">Ввести дані</button>
+                    <button id="default_data_task3">Встановити за змовчуванням</button>
+                    
+                    <div id="input_intervals_task3">
+    
+                    </div>
+                </div>
     
                 <button id="task3_calculate">Calculate</button>
 

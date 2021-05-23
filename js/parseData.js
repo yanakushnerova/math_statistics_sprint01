@@ -58,11 +58,21 @@ function createInputTable(flag, amountOfIntervals, arr, task) {
         input_intervals.appendChild(table)
     } else if (task == 2) {
         input_intervals_task2.appendChild(table)
+    } else if (task == 3) {
+        input_intervals_task3.appendChild(table)
     }
 }
 
-function parseTable() {
-    let tr = document.querySelectorAll("#input_intervals > table > tr")
+function parseTable(task) {
+    let tr
+    if (task == 1) {
+        tr = document.querySelectorAll("#input_intervals > table > tr")
+    } else if (task == 2) {
+        tr = document.querySelectorAll("#input_intervals_task2 > table > tr")
+    } else if (task == 3) {
+        tr = document.querySelectorAll("#input_intervals_task3 > table > tr")
+    }
+
     let arr = Array.from(Array(tr.length), () => new Array(3))
 
     for (let i = 0; i < tr.length; i++) {
