@@ -128,6 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     task3_calculate.onclick = function() {
         solution3.innerHTML = ""
+        input_sample_1 = parseTable(1)
         input_sample_3 = parseTable(3)
+        checkHypotesis3(input_sample_1, input_sample_3)
     }
 });

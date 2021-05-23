@@ -98,4 +98,14 @@ function checkHypotesis2(arr1, arr2) {
     let critical = document.createElement("div")
     critical.innerText = critical_value
     document.getElementById("task2_solution").appendChild(critical)
+
+    let conclusion = document.createElement("p")
+    
+    if (observed_value < critical_value) {
+        conclusion.innerHTML = "Висновок: висунута гіпотеза доведена"
+    } else {
+        conclusion.innerHTML = "Висновок: висунута гіпотеза не доведена"
+    }
+
+    document.getElementById("task2_solution").appendChild(conclusion)
 }

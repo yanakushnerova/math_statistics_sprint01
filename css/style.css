@@ -22,6 +22,10 @@ div#input_page_task3 button{
     margin-top: 15px;
 }
 
+#task3_calculate {
+    margin-top: 20px;
+}
+
 #input_intervals td {
     padding: 0;
 }
@@ -137,6 +141,10 @@ div#task2_solution p {
     font-size: x-large;
 }
 
+div#task3_solution p {
+    font-size: x-large;
+}
+
 div#task1_solution div {
     font-size: x-large;
     margin-top: -10px;
@@ -147,86 +155,11 @@ div#task2_solution div {
     margin-top: -10px;
 }
 
+div#task3_solution div {
+    font-size: x-large;
+    margin-top: -10px;
+}
+
 #level_n, #level_n_task2, #level_n_task3 {
     width: 65px;
 }
-
-/* 
-
-
-
-
-div#task1_solution p {
-    font-size: xx-large;
-    font-weight: bold;
-}
-
-div#task2_solution p {
-    font-size: xx-large;
-    font-weight: bold;
-}
-
-div#task3_solution p {
-    font-size: xx-large;
-    font-weight: bold;
-}
-
-div#task4_solution p {
-    font-size: xx-large;
-    font-weight: bold;
-}
-
-div#task5_solution p {
-    font-size: xx-large;
-    font-weight: bold;
-}
-
-
-
-div#task2_solution div {
-    font-size: x-large;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-div#task2_solution table {
-    font-size: x-large;
-}
-
-div#task2_solution td {
-    padding: 15px;
-    border: none;
-}
-
-div#task3_solution div {
-    font-size: x-large;
-    margin-bottom: 40px;
-}
-
-div#task4_solution div {
-    font-size: x-large;
-    margin-bottom: 40px;
-}
-
-div#task5_solution div {
-    font-size: x-large;
-    margin-bottom: 40px;
-}
-
-div#task3_solution span {
-    font-size: x-large;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-div#task4_solution span {
-    font-size: x-large;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-div#task5_solution span {
-    font-size: x-large;
-    margin-bottom: 5px;
-    font-weight: bold;
-} */
