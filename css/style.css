@@ -71,6 +71,7 @@ th, td, tr {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
+    border-radius: 2px;
 }
 
 body {
@@ -91,6 +92,14 @@ div#task1_solution p {
     font-size: x-large;
 }
 
+div#task1_solution div {
+    font-size: x-large;
+    margin-top: -10px;
+}
+
+#level_n {
+    width: 65px;
+}
 
 /* 
 
@@ -122,9 +131,7 @@ div#task5_solution p {
     font-weight: bold;
 }
 
-div#task1_solution div {
-    font-size: x-large;
-}
+
 
 div#task2_solution div {
     font-size: x-large;
