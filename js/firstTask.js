@@ -218,4 +218,3 @@ function checkHypotesis(arr) {
     }
     document.getElementById("task1_solution").appendChild(conclusion)
 }
-//Висунута гіпотеза не доведена

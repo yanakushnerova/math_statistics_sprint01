@@ -12,9 +12,16 @@ const solution2 = document.getElementById("task2_solution")
 const solution3 = document.getElementById("task3_solution")
 
 const input_page = document.getElementById("input_page")
+const input_page_task2 = document.getElementById("input_page_task2")
+
 const enter_data = document.getElementById("enter_data")
+const enter_data_task2 = document.getElementById("enter_data_task2")
+
 const default_data = document.getElementById("default_data")
+const default_data_task2 = document.getElementById("default_data_task2")
+
 const input_intervals = document.getElementById("input_intervals")
+const input_intervals_task2 = document.getElementById("input_intervals_task2")
 
 const default_sample = [
     [0.228, 0.248, 6],
@@ -28,26 +35,57 @@ const default_sample = [
     [0.388, 0.408, 8]
 ]
 
+const default_sample_2 = [
+    [0.228, 0.248, 12],
+    [0.248, 0.268, 18],
+    [0.268, 0.288, 26],
+    [0.288, 0.308, 38],
+    [0.308, 0.328, 40],
+    [0.328, 0.348, 34],
+    [0.348, 0.368, 26],
+    [0.368, 0.38, 16],
+    [0.388, 0.408, 6]
+]
+
 let input_sample = []
 
 const intervals_n = document.getElementById("intervals_n")
+const intervals_n_task2 = document.getElementById("intervals_n_task2")
+
 const level_n = document.getElementById("level_n")
+const level_n_task2 = document.getElementById("level_n_task2")
 
 document.addEventListener('DOMContentLoaded', function() {
     enter_data.onclick = function() {
-        if (document.getElementById("input_table")) {
-            document.getElementById("input_table").remove()
+        if (document.getElementById("input_table_1")) {
+            document.getElementById("input_table_1").remove()
         }
 
-        createInputTable(1, intervals_n.value, default_sample)
+        createInputTable(1, intervals_n.value, default_sample, 1)
     }
 
     default_data.onclick = function() {
-        if (document.getElementById("input_table")) {
-            document.getElementById("input_table").remove()
+        if (document.getElementById("input_table_1")) {
+            document.getElementById("input_table_1").remove()
         }
 
-        createInputTable(2, 9, default_sample)
+        createInputTable(2, 9, default_sample, 1)
+    }
+
+    enter_data_task2.onclick = function() {
+        if (document.getElementById("input_table_2")) {
+            document.getElementById("input_table_2").remove()
+        }
+
+        createInputTable(1, intervals_n_task2.value, default_sample_2, 2)
+    }
+
+    default_data_task2.onclick = function() {
+        if (document.getElementById("input_table_2")) {
+            document.getElementById("input_table_2").remove()
+        }
+
+        createInputTable(2, 9, default_sample_2, 2)
     }
 
     task1_calculate.onclick = function() {

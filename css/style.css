@@ -14,11 +14,29 @@ div#input_page button{
     margin-top: 15px;
 }
 
+div#input_page_task2 button{
+    margin-top: 15px;
+}
+
 #input_intervals td {
     padding: 0;
 }
 
+#input_intervals_task2 td {
+    padding: 0;
+}
+
 #input_intervals table input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    box-shadow: none;
+    border: none;
+    padding: 8px;
+}
+
+#input_intervals_task2 table input {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -79,6 +97,7 @@ body {
 }
 
 canvas {
+    margin-top: 30px;
     max-width: 950px;
     max-height: 600px;
 }
@@ -97,7 +116,7 @@ div#task1_solution div {
     margin-top: -10px;
 }
 
-#level_n {
+#level_n, #level_n_task2 {
     width: 65px;
 }
 

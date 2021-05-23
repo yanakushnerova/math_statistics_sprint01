@@ -1,7 +1,7 @@
-function createInputTable(flag, amountOfIntervals, arr) {
+function createInputTable(flag, amountOfIntervals, arr, task) {
     let table = document.createElement("table") 
     table.innerHTML = "<th>Початок інтервалу</th><th>Кінець інтервалу</th><th>Число спостережень</th>"
-    table.id = "input_table"
+    table.id = "input_table_" + task
 
     if (flag == 1) {
         for (let i = 0; i < amountOfIntervals; i++) {
@@ -54,7 +54,11 @@ function createInputTable(flag, amountOfIntervals, arr) {
         }
     }
 
-    input_intervals.appendChild(table)
+    if (task == 1) {
+        input_intervals.appendChild(table)
+    } else if (task == 2) {
+        input_intervals_task2.appendChild(table)
+    }
 }
 
 function parseTable() {
