@@ -116,6 +116,7 @@ function checkHypotesis(arr) {
     
     dispersion_value = parseFloat((dispersion_value / (series.length - 1)).toFixed(5))
     let deviation_value = parseFloat(Math.sqrt(dispersion_value).toFixed(5))
+    let observed_value = 0
 
     for (let i = 0; i < 9; i++) {
         let tr = document.createElement("tr")
@@ -166,6 +167,7 @@ function checkHypotesis(arr) {
         let ki = document.createElement("td")
         let ki_value = ((arr[i][2] - npi_value) ** 2) / npi_value
         ki.innerText = ki_value.toFixed(5)
+        observed_value += ki_value
 
         tr.appendChild(xi)
         tr.appendChild(xi1)
@@ -194,4 +196,26 @@ function checkHypotesis(arr) {
     let description3 = document.createElement("p")
     description3.innerHTML = "Спостережене значення:"
     document.getElementById("task1_solution").appendChild(description3)
+
+    let observed = document.createElement("div")
+    observed.innerText = observed_value.toFixed(5)
+    document.getElementById("task1_solution").appendChild(observed)
+
+    let description4 = document.createElement("p")
+    description4.innerHTML = "Критична точка:"
+    document.getElementById("task1_solution").appendChild(description4)
+
+    let critical_value = criticalPointPearson(k_value)
+    let critical = document.createElement("div")
+    critical.innerText = critical_value
+    document.getElementById("task1_solution").appendChild(critical)
+
+    let conclusion = document.createElement("p")
+    if (observed_value < critical_value) {
+        conclusion.innerHTML = "Висновок: висунута гіпотеза доведена"
+    } else {
+        conclusion.innerHTML = "Висновок: висунута гіпотеза не доведена"
+    }
+    document.getElementById("task1_solution").appendChild(conclusion)
 }
+//Висунута гіпотеза не доведена
