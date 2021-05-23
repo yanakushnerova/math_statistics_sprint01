@@ -76,3 +76,44 @@ function intervalSeries(input_sample) {
         }
     })
 }
+
+function checkHypotesis(arr) {
+    let hypotesis = document.createElement("p")
+    hypotesis.innerHTML = "H0: припустимо, що випадкова величина розподілена за нормальним законом"
+    document.getElementById("task1_solution").appendChild(hypotesis)
+
+    let description = document.createElement("p")
+    description.innerHTML = "Розрахунки при перевірці гіпотези:"
+    document.getElementById("task1_solution").appendChild(description)
+
+    let table = document.createElement("table")
+    table.innerHTML = "<th>Xi</th>\
+    <th>Xi+1</th>\
+    <th>ni</th>\
+    <th>x1</th>\
+    <th>x2</th>\
+    <th>F(x1)</th>\
+    <th>F(x2)</th>\
+    <th>pi</th>\
+    <th>ni'</th>\
+    <th>Ki'</th>"
+    table.id = "task1_table"
+
+    for (let i = 0; i < 9; i++) {
+        let tr = document.createElement("tr")
+
+        let xi = document.createElement("td")
+        xi.innerText = arr[i][0]
+        let xi1 = document.createElement("td")
+        xi1.innerText = arr[i][1]
+        let ni = document.createElement("td")
+        ni.innerText = arr[i][2]
+
+        tr.appendChild(xi)
+        tr.appendChild(xi1)
+        tr.appendChild(ni)
+        table.appendChild(tr)
+    }
+
+    document.getElementById("task1_solution").appendChild(table)
+}

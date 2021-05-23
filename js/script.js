@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         solution1.innerHTML = ""
         input_sample = parseTable()
         intervalSeries(input_sample)
+        checkHypotesis(input_sample)
     }
 
     task2_calculate.onclick = function() {
@@ -63,6 +64,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     task3_calculate.onclick = function() {
         solution3.innerHTML = ""
-        
     }
 });
